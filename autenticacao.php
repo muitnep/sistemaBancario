@@ -3,6 +3,7 @@
 use Alura\Banco\Model\Conta\Titular;
 use Alura\Banco\Model\CPF;
 use Alura\Banco\Model\Endereco;
+use Alura\Banco\Model\Funcionario\Desenvolvedor;
 use Alura\Banco\Model\Funcionario\Diretor;
 use Alura\Banco\Model\Funcionario\Gerente;
 use Alura\Banco\Service\Autenticador;
@@ -27,3 +28,4 @@ $novoTitular = new Titular('Tieda ', new CPF('113.331.313-43'), new Endereco('QN
 $autenticador->tentarLogin($diretor, '1345');
 $autenticador->tentarLogin($gerente, '5431');
 $autenticador->tentarLogin($novoTitular, 'qaz');
+
