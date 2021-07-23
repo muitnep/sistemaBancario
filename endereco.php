@@ -7,20 +7,20 @@ use Alura\Banco\Model\Endereco;
 require_once 'autoload.php';
 
 $umEndereco = new Endereco(
-  'Saint Paul',
+  'saint paul',
   '31c',
-  'Maryland',
-  'Street One'
+  'maryland',
+  'street one'
 
 );
 
 $doisEndereco = new Endereco(
-  'Saint Peter',
+  'saint peter',
   '43r',
-  'Josephland',
-  'Street Two'
+  'josephland',
+  'street two'
 
 );
 
-echo $umEndereco->__toString() . PHP_EOL;
-echo $doisEndereco->__toString();
+echo $umEndereco->cidade;
+exit();
